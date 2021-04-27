@@ -9,7 +9,7 @@ for i in range(0, 5):
     print(5-i)
     time.sleep(1)
 
-keyboard.write("/poll")
+keyboard.write("/poll ")
 time.sleep(0.25)
 keyboard.write("Bester Song? ")
 time.sleep(0.25)
@@ -25,9 +25,9 @@ for song in songs:
         index = not index
 
     keyboard.press_and_release('tab')
-    time.sleep(0.25)
+    time.sleep(0.5)
     keyboard.write(song)
-    time.sleep(0.25)
+    time.sleep(0.5)
     keyboard.press_and_release('tab')
-    time.sleep(0.25)
+    time.sleep(0.5)
     print("Song: " + song)
