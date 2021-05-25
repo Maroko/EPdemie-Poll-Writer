@@ -1,6 +1,21 @@
-import time
-import keyboard
-import pyperclip
+try:
+    import time
+except ImportError:
+    from pip._internal import main as pip
+    pip(['install', '--user', 'time'])
+    import time
+try:
+    import keyboard
+except ImportError:
+    from pip._internal import main as pip
+    pip(['install', '--user', 'keyboard'])
+    import keyboard
+try:
+    import pyperclip
+except ImportError:
+    from pip._internal import main as pip
+    pip(['install', '--user', 'pyperclip'])
+    import pyperclip
 
 writeToFile = True
 poll_text = ""
